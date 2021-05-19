@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/812078f245.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./components.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="nav-bar">
+      <img class="logo-image" src="././images/logo.png" alt="Bueno ui logo" />
+    </nav>
+    <nav id="side-navigation">
+      <header>Components</header>
+      <ul>
+        <li><a class="side-link" href="#installation">Installation</a></li>
+        <li>
+          <a class="side-link" href="#avatar">Avatars</a>
+        </li>
+        <li>
+          <a class="side-link" href="#alerts">Alerts</a>
+        </li>
+        <li><a class="side-link" href="#badges">Badges</a></li>
+        <li><a class="side-link" href="#buttons">Buttons</a></li>
+        <li>
+          <a class="side-link" href="#long-cards">Long Cards</a>
+        </li>
+        <li>
+          <a class="side-link" href="#long-cards-banner"
+            >Long Cards with Banner</a
+          >
+        </li>
+        <li>
+          <a class="side-link" href="#horizontal-cards">Horizontal Card</a>
+        </li>
+        <li>
+          <a class="side-link" href="#input-with-validation"
+            >Input with validation</a
+          >
+        </li>
+        <li><a class="side-link" href="#navigation-bar">Navigation Bar</a></li>
+        <li>
+          <a class="side-link" href="#footer">Footers</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="installation" class="installation">
+        <h2>Installation</h2>
+        <p class="installation-text">
+          Enter the below mentioned code in your CSS file. You can override
+          properties by mentioning them again in your CSS. Code snippets are
+          attached after each component and will have to use the exact same
+          classnames. Happy Creating.
+        </p>
+      </section>
+      <section class="components">
+        <article id="avatar" class="avatar">
+          <h3>Avatars</h3>
+          <div class="avatar-container">
+            <i class="fas fa-user user-smallest"></i>
+            <i class="fas fa-user user-medium"></i>
+            <i class="fas fa-user user-large"></i>
+            <i class="fas fa-user user-xlarge"></i>
+          </div>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a09145f0c8580014c81421"
+            style="width: 100%; height: 190px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="alerts" class="alerts">
+          <h3>Alerts</h3>
+          <div class="alert alert-red">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            This is an alert box.
+          </div>
+          <div class="alert alert-yellow">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            This is an alert box.
+          </div>
+          <div class="alert alert-green">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            This is an alert box.
+          </div>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a0cd21cf85430014b405d9"
+            style="width: 100%; height: 190px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="badges" class="badges">
+          <h3>Badges on icons</h3>
+          <span class="fa-layers fa-fw icon-medium">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="fa-layers-counter fa-layers-bottom-right">2</span>
+          </span>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a0c254cf85430014b405d7"
+            style="width: 100%; height: 138px"
+            frameborder="0"
+          ></iframe>
+          <h3>Badges on avatars</h3>
+          <span class="fa-layers fa-fw icon-medium">
+            <i class="fas fa-user"></i>
+            <span class="fa-layers-counter user-badge"></span>
+          </span>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a0c2a0cf85430014b405d8"
+            style="width: 100%; height: 125px"
+            frameborder="0"
+          ></iframe>
+          <h3>badges on Images</h3>
+          <div class="container-badge-on-img">
+            <img
+              class="img-badge-on-img"
+              src="./images/email (1).png"
+              alt="email photo example"
+            />
+            <span class="badge-on-img">221</span>
+          </div>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a13948cf85430014b40600"
+            style="width: 100%; height: 138px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="buttons" class="buttons">
+          <h3>Buttons</h3>
+          <p>Primary button</p>
+          <button class="primary-button">Add to Cart</button>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a0d035cf85430014b405db"
+            style="width: 100%; height: 112px"
+            frameborder="0"
+          ></iframe>
+          <p>Secondary Button</p>
+          <button class="secondary-button">Cancel</button>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a13acacf85430014b40601"
+            style="width: 100%; height: 99px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="long-cards" class="cards">
+          <h3>Long cards</h3>
+          <div class="card-container">
+            <div class="long-cards">
+              <img
+                src="https://images.pexels.com/photos/4790590/pexels-photo-4790590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+              />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                laudantium quasi atque maiores rerum qui nam nisi ullam
+                blanditiis ut.
+              </p>
+              <div class="card-btn-container">
+                <button class="primary-button card-button">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="primary-button card-button">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="long-cards">
+              <img
+                src="https://images.pexels.com/photos/4790590/pexels-photo-4790590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+              />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                laudantium quasi atque maiores rerum qui nam nisi ullam
+                blanditiis ut.
+              </p>
+              <div class="card-btn-container">
+                <button class="primary-button card-button">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="primary-button card-button">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="long-cards">
+              <img
+                src="https://images.pexels.com/photos/4790590/pexels-photo-4790590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+              />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                laudantium quasi atque maiores rerum qui nam nisi ullam
+                blanditiis ut.
+              </p>
+              <div class="card-btn-container">
+                <button class="primary-button card-button">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="primary-button card-button">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a40826fadf5c001480d9fc"
+            style="width: 100%; height: 180px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="long-cards-banner">
+          <h3>Long card with banner</h3>
+          <div class="long-cards">
+            <img
+              src="https://images.pexels.com/photos/4790590/pexels-photo-4790590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              laudantium quasi atque maiores rerum qui nam nisi ullam blanditiis
+              ut.
+            </p>
+            <div class="card-btn-container">
+              <button class="primary-button card-button">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="primary-button card-button">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <span class="card-banner">NEW</span>
+          </div>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a40826fadf5c001480d9fc"
+            style="width: 100%; height: 333px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="horizontal-card">
+          <h3>Horizontal Card</h3>
+          <div class="horizontal-cards">
+            <img
+              class="horizontal-card-image"
+              src="https://images.pexels.com/photos/4790590/pexels-photo-4790590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="horizontal card image"
+            />
+            <p class="horizontal-card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
+              illum!
+            </p>
+            <p class="horizontal-card-price"><strong>£20.00</strong></p>
+          </div>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a4116bfadf5c001480da09"
+            style="width: 100%; height: 177px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="input-with-validation">
+          <h3>Inputs with Validation</h3>
+          <div>
+            <label class="label" for="email">Email: </label>
+            <input class="input-email" type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label class="label" for="url">Website: </label>
+            <input class="input-website" type="url" name="url" id="url" />
+          </div>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a56b1865a411001409ca4c"
+            style="width: 100%; height: 203px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="navigation-bar">
+          <h3>Navigation Bar</h3>
+          <nav class="navbar">
+            <img
+              class="nav-img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Fdrw7WcgfAOWsU-xgUFIj8Hwymz--LLjXQ&usqp=CAU"
+            />
+            <input
+              type="text"
+              aria-label="Search"
+              name="term"
+              id="term"
+              class="search"
+              placeholder="Search product, category or brand"
+            />
+            <ul class="nav-links">
+              <li class="nav-list-icon"><i class="far fa-heart"></i></li>
+              <li class="nav-list-icon"><i class="fas fa-user"></i></li>
+              <li class="nav-list-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </li>
+            </ul>
+          </nav>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a4216bfadf5c001480da1d"
+            style="width: 100%; height: 229px"
+            frameborder="0"
+          ></iframe>
+        </article>
+        <article id="footer">
+          <h3>Footer</h3>
+          <footer class="footer">
+            <div class="footer-links">
+              <a class="footer-link" href="#">Twitter</a>
+              <a class="footer-link" href="#"> GitHub</a>
+              <a class="footer-link" href="#"> Linkedin</a>
+            </div>
+            <p>Created in India by Anurag</p>
+          </footer>
+          <iframe
+            class="code-snippet"
+            src="https://www.thiscodeworks.com/embed/60a4259afadf5c001480da22"
+            style="width: 100%; height: 203px"
+            frameborder="0"
+          ></iframe>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
